@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=RAMPilot
+Comment=Live memory monitoring and safe application cleanup
+Exec=rampilot
+Icon=io.github.rampilot.RAMPilot
+Terminal=false
+Categories=System;Monitor;
+Keywords=RAM;Memory;Swap;Processes;
+StartupNotify=true
+StartupWMClass=io.github.rampilot.RAMPilot

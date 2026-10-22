@@ -1,0 +1,9 @@
+Package: rampilot
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: RAMPilot contributors <rampilot@example.invalid>
+Depends: python3 (>= 3.10), python3-gi, python3-gi-cairo, python3-psutil, gir1.2-gtk-4.0, gir1.2-adw-1 (>= 1.5)
+Description: Native Linux memory dashboard and safe application cleanup
+ Real-time RAM, swap and process monitoring with explicitly confirmed cleanup.

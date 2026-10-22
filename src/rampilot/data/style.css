@@ -1,0 +1,480 @@
+/* RAMPilot — GNOME-inspired dark dashboard */
+
+window.rampilot-window {
+  background-image: linear-gradient(160deg, #0b0e14 0%, #10151e 52%, #0a0d12 100%);
+  color: #e8ecf4;
+}
+
+headerbar.rampilot-header {
+  background-color: rgba(12, 16, 23, 0.88);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.055);
+  box-shadow: none;
+}
+
+.ram-title {
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.ram-subtitle {
+  font-size: 11px;
+  color: #8b95a7;
+}
+
+.ram-card {
+  background-color: rgba(24, 29, 39, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: 20px;
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.16);
+}
+
+.ram-hero-card {
+  background-image: linear-gradient(150deg, #1b2431 0%, #151b26 55%, #131821 100%);
+  border: 1px solid rgba(148, 233, 219, 0.1);
+  border-radius: 22px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
+}
+
+.ram-section-title {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.ram-eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8b95a7;
+  letter-spacing: 1px;
+}
+
+.ram-dim {
+  color: #8b95a7;
+}
+
+.ram-small {
+  font-size: 11px;
+}
+
+.ram-value {
+  font-weight: 700;
+  font-size: 17px;
+  color: #f1f5fb;
+}
+
+.ram-stat-tile {
+  background-color: rgba(25, 30, 41, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 16px;
+  padding: 11px 13px;
+}
+
+.ram-stat-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #98a2b3;
+}
+
+.ram-stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f5fb;
+}
+
+.ram-stat-sub {
+  font-size: 10px;
+  color: #7e8899;
+}
+
+.ram-icon-chip {
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 9px;
+  background-color: rgba(94, 234, 212, 0.09);
+}
+
+.ram-info-card {
+  background-color: rgba(94, 234, 212, 0.055);
+  border: 1px solid rgba(94, 234, 212, 0.11);
+  border-radius: 16px;
+  padding: 12px 14px;
+}
+
+.ram-info-title {
+  font-size: 11px;
+  font-weight: 700;
+  color: #a7f3d0;
+}
+
+.ram-info-text {
+  font-size: 10px;
+  color: #93a1b3;
+}
+
+button.ram-free-button {
+  background-image: linear-gradient(135deg, #34d399 0%, #22d3ee 100%);
+  color: #05211c;
+  border: none;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 13px;
+  padding: 11px 16px;
+  box-shadow: 0 8px 22px rgba(34, 211, 238, 0.15);
+}
+
+button.ram-free-button:hover {
+  background-image: linear-gradient(135deg, #6ee7b7 0%, #67e8f9 100%);
+}
+
+button.ram-free-button:active {
+  background-image: linear-gradient(135deg, #22c99a 0%, #16b8d4 100%);
+}
+
+button.ram-free-button label {
+  color: #05211c;
+  font-weight: 800;
+}
+
+button.ram-subtle-button {
+  background-color: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 12px;
+  padding: 8px 13px;
+  font-weight: 600;
+}
+
+button.ram-subtle-button:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+}
+
+.ram-status-pill {
+  border-radius: 999px;
+  padding: 4px 10px;
+  background-color: rgba(110, 231, 183, 0.09);
+  border: 1px solid rgba(110, 231, 183, 0.17);
+}
+
+.ram-status-pill label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #a7f3d0;
+}
+
+.ram-status-dot {
+  min-width: 7px;
+  min-height: 7px;
+  border-radius: 999px;
+  background-color: #34d399;
+}
+
+.ram-status-pill.healthy .ram-status-dot {
+  background-color: #34d399;
+}
+
+.ram-status-pill.elevated {
+  background-color: rgba(251, 191, 36, 0.1);
+  border-color: rgba(251, 191, 36, 0.22);
+}
+
+.ram-status-pill.elevated label {
+  color: #fde68a;
+}
+
+.ram-status-pill.elevated .ram-status-dot {
+  background-color: #fbbf24;
+}
+
+.ram-status-pill.critical {
+  background-color: rgba(251, 113, 133, 0.11);
+  border-color: rgba(251, 113, 133, 0.25);
+}
+
+.ram-status-pill.critical label {
+  color: #fecdd3;
+}
+
+.ram-status-pill.critical .ram-status-dot {
+  background-color: #fb7185;
+}
+
+.ram-status-pill.paused {
+  background-color: rgba(148, 163, 184, 0.09);
+  border-color: rgba(148, 163, 184, 0.16);
+}
+
+.ram-status-pill.paused label {
+  color: #cbd5e1;
+}
+
+.ram-status-pill.paused .ram-status-dot {
+  background-color: #94a3b8;
+}
+
+.ram-history-value {
+  font-weight: 800;
+  font-size: 24px;
+  color: #f1f5fb;
+}
+
+.ram-process-card {
+  padding-bottom: 8px;
+}
+
+entry.ram-search {
+  min-height: 32px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+entry.ram-search:focus-within {
+  border-color: rgba(94, 234, 212, 0.45);
+  box-shadow: 0 0 0 2px rgba(94, 234, 212, 0.09);
+}
+
+dropdown.ram-sort {
+  min-height: 32px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.045);
+}
+
+dropdown.ram-sort button {
+  border-radius: 10px;
+  padding: 3px 10px;
+}
+
+listview.ram-process-list {
+  background: transparent;
+}
+
+listview.ram-process-list > row {
+  background: transparent;
+  padding: 0;
+}
+
+listview.ram-process-list > row:hover {
+  background-color: rgba(255, 255, 255, 0.032);
+  border-radius: 12px;
+}
+
+listview.ram-process-list > row:selected {
+  background-color: rgba(94, 234, 212, 0.08);
+}
+
+.ram-process-row {
+  padding: 7px 9px;
+  border-radius: 12px;
+}
+
+.ram-process-name {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e9eef6;
+}
+
+.ram-process-sub {
+  font-size: 10px;
+  color: #7f8a9c;
+}
+
+.ram-process-mem {
+  font-size: 12px;
+  font-weight: 700;
+  color: #e9eef6;
+}
+
+.ram-process-pct {
+  font-size: 10px;
+  color: #7f8a9c;
+}
+
+.ram-cpu-pill {
+  background-color: rgba(255, 255, 255, 0.045);
+  border-radius: 7px;
+  padding: 2px 7px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #aab4c4;
+}
+
+.ram-cpu-pill.busy {
+  background-color: rgba(251, 191, 36, 0.1);
+  color: #fde68a;
+}
+
+.ram-badge {
+  border-radius: 999px;
+  padding: 1px 6px;
+  font-size: 9px;
+  font-weight: 700;
+  background-color: rgba(94, 234, 212, 0.08);
+  color: #99f6e4;
+  border: 1px solid rgba(94, 234, 212, 0.12);
+}
+
+.ram-badge.service {
+  background-color: rgba(148, 163, 184, 0.08);
+  color: #aab4c4;
+  border-color: rgba(148, 163, 184, 0.11);
+}
+
+.ram-app-icon {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.055);
+}
+
+.ram-app-icon.service {
+  background-color: rgba(148, 163, 184, 0.08);
+}
+
+.ram-monogram {
+  font-weight: 800;
+  font-size: 13px;
+  color: #d9fef6;
+}
+
+.ram-app-icon.service .ram-monogram {
+  color: #cbd5e1;
+}
+
+.ram-app-icon.tone-0 { background-color: rgba(94, 234, 212, 0.12); }
+.ram-app-icon.tone-1 { background-color: rgba(125, 211, 252, 0.12); }
+.ram-app-icon.tone-2 { background-color: rgba(196, 181, 253, 0.12); }
+.ram-app-icon.tone-3 { background-color: rgba(251, 191, 36, 0.11); }
+.ram-app-icon.tone-4 { background-color: rgba(251, 113, 133, 0.11); }
+.ram-app-icon.tone-5 { background-color: rgba(163, 230, 53, 0.11); }
+
+.ram-empty-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.ram-empty-text {
+  font-size: 11px;
+  color: #7f8a9c;
+}
+
+.ram-separator {
+  background-color: rgba(255, 255, 255, 0.06);
+  min-height: 1px;
+}
+
+.ram-activity-dot {
+  min-width: 7px;
+  min-height: 7px;
+  border-radius: 999px;
+  background-color: rgba(148, 163, 184, 0.4);
+}
+
+.ram-activity-dot.active {
+  background-color: #fbbf24;
+}
+
+.ram-swap-bar trough {
+  min-height: 4px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+.ram-swap-bar progress {
+  min-height: 4px;
+  border-radius: 999px;
+  background-image: linear-gradient(90deg, #fbbf24, #fb7185);
+}
+
+/* Cleanup dialog */
+.ram-cleanup-header {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.ram-cleanup-metric {
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.055);
+  border-radius: 14px;
+  padding: 12px 14px;
+}
+
+.ram-cleanup-metric-value {
+  font-size: 20px;
+  font-weight: 800;
+  color: #f1f5fb;
+}
+
+.ram-cleanup-metric-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: #8b95a7;
+}
+
+.ram-cleanup-row {
+  border-radius: 12px;
+  padding: 6px 8px;
+}
+
+.ram-cleanup-row:hover {
+  background-color: rgba(255, 255, 255, 0.035);
+}
+
+.ram-check {
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.ram-result-box {
+  border-radius: 16px;
+  padding: 14px;
+  background-color: rgba(94, 234, 212, 0.055);
+  border: 1px solid rgba(94, 234, 212, 0.12);
+}
+
+.ram-result-box.warn {
+  background-color: rgba(251, 191, 36, 0.06);
+  border-color: rgba(251, 191, 36, 0.15);
+}
+
+.ram-result-delta {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.ram-result-delta.positive { color: #6ee7b7; }
+.ram-result-delta.negative { color: #fb7185; }
+.ram-result-delta.neutral { color: #cbd5e1; }
+
+.ram-notice {
+  background-color: rgba(125, 211, 252, 0.055);
+  border: 1px solid rgba(125, 211, 252, 0.12);
+  border-radius: 14px;
+  padding: 10px 12px;
+  font-size: 10px;
+  color: #93a1b3;
+}
+
+.ram-warning-text {
+  color: #fbbf24;
+}
+
+.ram-cleanup-list {
+  background: transparent;
+}
+
+.ram-cleanup-list > row {
+  background: transparent;
+  padding: 1px;
+}
+
+.ram-cleanup-list > row:hover {
+  background: transparent;
+}
+
+.ram-settings-dialog {
+  background-color: #11151d;
+}
+
+tooltip {
+  background-color: rgba(20, 25, 34, 0.98);
+  color: #e8ecf4;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+}
